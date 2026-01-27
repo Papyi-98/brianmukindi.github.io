@@ -9,7 +9,3 @@ This is my personal blog where I share what I’m learning about:
 - Automation
 - Building real projects
 
-## Latest Posts
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %d, %Y" }}
-{% endfor %}
