@@ -1,12 +1,15 @@
 ---
-layout: home
+layout: default
 ---
 
 # Welcome 👋
 
-This is my personal blog where I share ideas about:
+This is my personal blog where I share what I’m learning about:
 - Technology
 - Automation
-- Problem solving
+- Building real projects
 
-Check out my latest posts below 👇
+## Latest Posts
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %d, %Y" }}
+{% endfor %}
