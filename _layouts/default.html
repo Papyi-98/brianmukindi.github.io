@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
-      <hr>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
 
-    <main>
-      {{ content }}
-    </main>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="brand" href="/">Brian Mukindi</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <footer>
-      <hr>
-      <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
-    </footer>
-  </body>
+  <!-- Main content -->
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© {{ site.time | date: "%Y" }} Brian Mukindi</p>
+  </footer>
+</body>
 </html>
