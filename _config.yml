@@ -1,9 +1,7 @@
+
 title: Brian Mukindi Blog
-description: >
-  A professional blog about technology, automation, and learning.
-theme: jekyll-theme-minimal
+description: Learning to build professional blogs with GitHub Pages
+url: https://brianmukindi.github.io
 
-author:
-  name: Brian Mukindi
-
-show_downloads: false
+markdown: kramdown
+permalink: /:2025/:January/:Thursday/:Automation projects/
