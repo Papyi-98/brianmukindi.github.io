@@ -1,29 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.title }} | Brian Mukindi</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brian Mukindi writes about technology, automation, and learning in public.">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
-<nav>
-  {% for item in site.navigation %}
-    <a href="{{ item.url }}">{{ item.title }}</a>
-  {% endfor %}
-</nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">Brian</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<hr>
+  <!-- Main Content -->
+  <main class="content">
+    {{ content }}
+  </main>
 
-<main>
-  {{ content }}
-</main>
-
-<footer>
-  <hr>
-  <p>© {{ site.time | date: "%Y" }} {{ site.author }}</p>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© {{ site.time | date: "%Y" }} Brian Mukindi · Built with GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
