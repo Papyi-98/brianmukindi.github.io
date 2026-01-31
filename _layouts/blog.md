@@ -1,18 +1,13 @@
 ---
 layout: default
-title: Writing & Insights
-permalink: /blog/
+title: Blog
 ---
 
-## Writing & Insights
-
-Thoughts, tutorials, and lessons from my journey in technology, automation, and software development.
+# Blog ✍️
 
 {% for post in site.posts %}
-### [{{ Building My First Blog with GitHub Pages & Jekyll}}]({{ https://brianmukindi.github.io/2026/01/25/building-my-first-blog-with-github-pages-jekyll.html }})
-*{{ post.date | date: "%B %d, %Y" }}*
-
-{{ post.excerpt }}
-
----
+<div class="post-card">
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+</div>
 {% endfor %}
